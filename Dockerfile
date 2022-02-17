@@ -1,5 +1,5 @@
-FROM httpd:2.4
+FROM httpd
 COPY ./* /var/www/html/
 EXPOSE 9093
-CMD ["systemctl","enable","httpd.service"]
-CMD ["systemctl","start","httpd.service"]
+CMD ["systemctl","enable","httpd"]
+CMD ["systemctl","start","httpd"]
