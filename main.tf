@@ -8,7 +8,7 @@ resource "aws_instance" "webservers" {
   instance_type   = "t2.micro"
   subnet_id       = "subnet-8fb4d0f7"
   key_name        = "Windows"
-  security_groups = "sg-0f30ecdf26ae644db"
+  security_groups = [sg-0f30ecdf26ae644db]
   
 tags = {
     Name = "computer"
